@@ -1,4 +1,7 @@
+
+<!-- Here is a way to import styles from another stylesheet file -->
 @import 'css/import-styles.css';
+
 body {
   text-align: center;
 }
