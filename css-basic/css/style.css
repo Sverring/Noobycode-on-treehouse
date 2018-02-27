@@ -1,6 +1,9 @@
+/* Type Selectors ------------------ */
+
 body {
   color: #878787;
   margin: 0;
+  font-size: .5em;
 }
 
 h1 {  
@@ -17,36 +20,13 @@ h3 {
   color: #48525c;
 }
 
-#main-footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  border-bottom: solid 10px orange;
-}
 
-.main-header {
-  background-color: orange;
-}
+/* Pseudo-classes ------------------ */
 
-.title {
-  color: white;
-  font-size: 26px;
-}
-
-.primary-content {
-  text-align: center;
-}
-
-.t-border {
-  border-top: 2px solid lightgrey;
-}
-
-/* pseudo-classes below */
-/* using when anchor tag has href attribute */
-/* class below marks unvisited links by color */
 a:link {
   color: orange;
 }
-/* class below marks visited links by color */
+
 a:visited {
   color: lightblue;
 }
@@ -59,8 +39,42 @@ a:active {
   color: lightcoral;
 }
 
-:focus {
-  color: white;
+/* ID Selectors -------------------- */
+
+#main-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-bottom: solid 10px orange;
+}
+
+/* Class Selectors ----------------- */
+
+.main-header {
   background-color: orange;
 }
+/* If we set font size in 'em' in body for 1em and 3em in '.title' - the title will be have one font size.
+If we dont change font size in title (still 3 em), but change it in 'body' for 2em - the '.title' will change
+his font size.
+It shows us the dependence class selector 'title' from type selector 'body'.
+The one selector inherits value from another.
+*/
+.title {
+  color: white;
+  font-size: 3em;
+}
+
+.primary-content, 
+.secondary-content {
+  width: 60%;
+}
+
+
+.primary-content {
+  text-align: center;
+}
+
+.t-border {
+  border-top: 2px solid lightgrey; /* Top border styles */
+}
+
 
