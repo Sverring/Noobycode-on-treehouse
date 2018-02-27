@@ -51,6 +51,7 @@ a:active {
 
 .main-header {
   background-color: orange;
+  font-size: 2em;
 }
 /* If we set font size in 'em' in body for 1em and 3em in '.title' - the title will be have one font size.
 If we dont change font size in title (still 3 em), but change it in 'body' for 2em - the '.title' will change
