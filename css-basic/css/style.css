@@ -18,12 +18,14 @@ h2 {
   font-size: 3.3125em; /* 53px/16px  */
   font-weight: normal;
   line-height: 1.1;
+  margin-bottom: 0.5em;   /* 26px/53px  */
 }
 
 h3 {
   font-size: 1.25em; /* 20px/16px  */
   color: #48525c;
   line-height: 1.2;
+  margin-bottom: 1.7em; /* 34px/20px */
 }
 
 /* Pseudo-classes ------------------ */
@@ -83,17 +85,13 @@ a:active {
 .primary-content, 
 .secondary-content {
   width: 60%;
+  margin: auto;
 }
 
 .wildlife {
   color: white;
   background-color: #434a52;  
   padding: 18% 24%;
-  border: 5px solid #ffa949;
-  /*
-  border-bottom-style: dashed; (particular style for bottom only);
-  border-left-color: pink; (color for left side);
-  border-top: 5px solid #ffa949; (styles the div only top side).
-  if we write border value without color, border inherits class color of text.
-  */
+  border-top: 5px solid #ffa949;  
+  margin: 105px 0 60px;
 }
