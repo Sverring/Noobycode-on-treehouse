@@ -59,12 +59,11 @@ a:active {
 /* Main Styles --------------------- */
 
 .main-header {
-
   padding-top: 170px;
   height: 850px;
+
   background: #ffa949 url('../img/mountains.jpg') no-repeat center;
-  background-size:cover;/* this
-  value set img fitted to header size. */
+  background-size: cover;
 }
 
 .title {
@@ -125,14 +124,38 @@ a:active {
 
 .wildlife {
   color: white;
-  background-color: #434a52;
+  text-align: left;
   padding: 18% 24%;
   border-top: 10px solid #ffa949;
   margin: 105px 0 60px;
+  background: #434a52 url('../img/bear.jpg') no-repeat center;
+  background-size: cover;
 }
 
 .arrow {
   width: 50px;
 }
 
+/* Floated Columns ------------------ */
 
+.resorts, 
+.tips {
+  width: 46.5%;
+}
+
+.tips {
+  float:left;
+}
+.resorts {
+  float:right;
+}
+
+
+/* Float Clearfix ------------------ */ /*this feature
+ prevents to collapse two 2 floats with other elements */
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
