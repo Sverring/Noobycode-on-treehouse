@@ -1,7 +1,7 @@
 /* Base Styles -------------------- */
 
 * {
-  box-sizing:border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -36,6 +36,7 @@ img {
   max-width: 100%;
   margin-bottom: 20px;
 }
+
 /* Pseudo-classes ------------------ */
 
 a:link {
@@ -58,9 +59,12 @@ a:active {
 /* Main Styles --------------------- */
 
 .main-header {
-  background-color: #ffa949;
+
   padding-top: 170px;
   height: 850px;
+  background: #ffa949 url('../img/mountains.jpg') no-repeat center;
+  background-size:cover;/* this
+  value set img fitted to header size. */
 }
 
 .title {
@@ -116,8 +120,7 @@ a:active {
   padding-left: 50px;
   padding-right: 50px;
   margin: auto;
-  max-width: 900px; /* element is
-  getting fixed by browser*/
+  max-width: 960px;
 }
 
 .wildlife {
@@ -131,3 +134,5 @@ a:active {
 .arrow {
   width: 50px;
 }
+
+
