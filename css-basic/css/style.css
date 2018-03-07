@@ -1,4 +1,4 @@
-//* Base Styles -------------------- */
+/* Base Styles -------------------- */
 
 * {
   box-sizing: border-box;
@@ -36,6 +36,7 @@ h3 {
 img {
   max-width: 100%;
   margin-bottom: 20px;
+   border-radius: 10%;
 }
 
 ul,
@@ -73,7 +74,11 @@ a:active {
   height: 850px;
   background: #ffa949 url('../img/mountains.jpg') no-repeat center;
   background-size: cover;
+  
+  background-image: radial-gradient(circle at top left, #ffa949, firebrick);
 }
+
+
 
 .title {
   color: white;
@@ -140,9 +145,10 @@ a:active {
   background: #434a52 url('../img/bear.jpg') no-repeat center;
   background-size: cover;
   box-shadow: inset 0px 0px 50px 10px rgba(0, 0, 0, 1),
-              0 0 100px 3px rgba(0, 0, 0, 0.8),
               0 10px 5px rgba(0, 0, 0, 0.5);
+ border-radius: 10%;
 }
+
 
 .arrow {
   width: 50px;
