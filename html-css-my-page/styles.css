@@ -1,0 +1,94 @@
+<!-- Web Fonts ----------------------->
+@font-face {
+    font-family: 'Geometria-Light',
+    src: url('../fonts/geometria-light-webfont.eot'),
+         url('../fonts/geometria-light-webfont.woff2') format('woff2'),
+         url('../fonts/geometria-light-webfont.woff') format('woff');
+}
+<! -- Base Styles -------------------->
+
+* {
+  box-sizing: border-box;
+  overflow:auto;
+}
+
+body {
+  margin-left:10%;
+  margin-right:10%;
+  padding: 0;
+  text-align:center;
+  font-family: 'Geometria-Light', Helvetica, Arial, sans-serif;
+  color:#222;
+  background:#f7f5f0;
+}
+
+img {
+  max-width: 100%;
+  margin-bottom: 20px;
+  border-radius: 3%;
+}
+
+
+/* Making for Nav menu*/
+ul {
+  list-style-type: none; /*Removes the bullets. A navigation bar does not need list markers */
+  margin:0;
+  padding:0;
+  background-color:#333;
+  text-align:center; /* centered the nav menu */
+}
+
+
+li {
+  display:inline-block;
+  
+}
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding:10px 10px;
+  text-decoration:none;
+}
+
+<!-- Pseudo-classes ------------------>
+
+<!-- Main Styles --------------------->
+
+.nav-menu {
+    margin-left: 30%;
+    margin-right: 30%;
+}
+.main-header {
+    height: 700px;
+    width: auto;
+    background: linear-gradient(0deg, #fff, transparent),
+                #fff url('../img/ttgl.jpg') no-repeat center;
+    background-size:cover;
+   
+}
+
+.title {
+  color: black;
+  border: 4px solid #ff0;
+  border-radius: 20px;
+  font-size: 6rem;
+  font-family: inherit;
+  text-align: center;
+  margin-top:0;
+}
+
+.main-content {
+    text-align: center;
+}
+<!-- Layout Styles -------------------> 
+.main-content {
+    width: 75%;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: auto;
+    max-width: 960px;
+}
+<!-- Floated Columns ----------------->
+<!-- Float Clearfix ------------------>
+<!-- Media Queries ------------------->
