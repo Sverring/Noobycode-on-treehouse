@@ -1,9 +1,9 @@
 <!-- Web Fonts ----------------------->
 @font-face {
-    font-family: 'Geometria-Light',
+    font-family: 'Geometria-Light';
     src: url('../fonts/geometria-light-webfont.eot'),
-         url('../fonts/geometria-light-webfont.woff2') format('woff2'),
-         url('../fonts/geometria-light-webfont.woff') format('woff');
+         url ('../fonts/geometria-light-webfont.woff2') format('woff2'),
+         url ('../fonts/geometria-light-webfont.woff') format('woff');
 }
 <! -- Base Styles -------------------->
 
@@ -22,27 +22,47 @@ body {
   background:#f7f5f0;
 }
 
+.title h1 {
+	font-size: 40px;
+
+}
+
+.title span {
+	font-size: 20px;
+	margin-top: 20px;
+}
+
 img {
   max-width: 100%;
   margin-bottom: 20px;
   border-radius: 3%;
 }
 
-
 /* Making for Nav menu*/
 ul {
   list-style-type: none; /*Removes the bullets. A navigation bar does not need list markers */
   margin:0;
   padding:0;
-  background-color:#333;
   text-align:center; /* centered the nav menu */
 }
 
-
 li {
+	margin-top: 200px; 
   display:inline-block;
-  
+  background-color:#333;
+  margin-left: -6px;
 }
+
+li:nth-child(1) {
+	padding-left: 10px;
+	border-radius: 10px 0 0 10px;
+}
+
+li:last-child {
+	padding-right: 10px;
+	border-radius: 0 10px 10px 0;
+}
+
 li a {
   display: inline-block;
   color: white;
@@ -68,15 +88,21 @@ li a {
    
 }
 
+
 .title {
+	padding: 2% 170px 26% !important;
   color: black;
-  border: 4px solid #ff0;
-  border-radius: 20px;
-  font-size: 6rem;
   font-family: inherit;
   text-align: center;
-  margin-top:0;
 }
+
+.border {
+	padding: 10px;
+	border: 4px solid #ff0;
+  	border-radius: 20px;
+  	margin-bottom: 20px;
+}
+
 
 .main-content {
     text-align: center;
