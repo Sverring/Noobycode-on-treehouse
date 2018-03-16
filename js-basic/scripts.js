@@ -1,6 +1,4 @@
-let visitor = prompt('What is your nation?');
-let message = 'Hello, ' + visitor + '. One more human in Hell. ';
-message += 'Welcome to the earth\'s Depth, ';
-message += visitor;
-message += '. Please, don\'t forget to clean your boiler!'; 
-document.write(message);
+let HTMLBadges = prompt('How many HTML badges do you  have?');
+let CSSBadges = prompt('How many CSS badges do you have?');
+let totalBadges = parseInt(HTMLBadges) + parseInt(CSSBadges);
+alert('<h2>Wow! You have ' + totalBadges + ' badges!.</h2>');
