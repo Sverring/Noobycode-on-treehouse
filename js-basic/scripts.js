@@ -1,4 +1,18 @@
-let HTMLBadges = prompt('How many HTML badges do you  have?');
-let CSSBadges = prompt('How many CSS badges do you have?');
-let totalBadges = parseInt(HTMLBadges) + parseInt(CSSBadges);
-alert('<h2>Wow! You have ' + totalBadges + ' badges!.</h2>');
+var questions = 3;
+
+questions -=1;
+var questionsLeft = ' [' + questions + ' questions left]';
+var adjective = prompt('Please type an adjective.' + questionsLeft);
+
+questions -=1;
+questionsLeft = ' [' + questions + ' questions left]';
+var verb = prompt('Please type a verb.' + questionsLeft);
+
+questionsLeft = ' [No more questions.]';
+var noun = prompt('Please type a noun.' + questionsLeft);
+
+alert('All done. Ready for the message?');
+var sentence = "<h2>There once was a " + adjective;
+sentence += ' programmer who wanted to use JavaScript to ' + verb;
+sentence += ' the ' + noun + '.</h2>';
+document.write(sentence);
