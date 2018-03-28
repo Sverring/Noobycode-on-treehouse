@@ -63,6 +63,11 @@ a {
 .name a,
 .main-nav a {
   padding: 10px 15px;
+  /* this feature adjusts 
+  clickable area (all width and height)
+  of the nav menu
+  */
+  display: block;
 
 }
 
@@ -74,6 +79,7 @@ a {
 }
 
 .main-header {
+  text-align:center;
 	padding-top: 1.5em;
 	padding-bottom: 1.5em;
 	background: #3acec2;
@@ -106,15 +112,13 @@ a {
 Making navigation bar in one line.
 */
   .name,
-  .main-nav,
   .main-nav li {
-      display: inline;
+      display: inline-block;
   }
 /* when you use inline display you cant adjust
 width and marhin.Only left/right margin and any padding
 */
   .name {
       width: 240px;
-      margin-right: 50px;
   }
 }
