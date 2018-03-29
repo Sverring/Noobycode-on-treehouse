@@ -109,11 +109,11 @@ a {
 	}
 
 /* 
-Making navigation bar in one line.
+Making navigation bar in one line. Add a class (.main-nav)
 */
   .name,
   .main-nav li {
-      display: inline-block;
+      display:inline-block;
   }
 /* when you use inline display you cant adjust
 width and marhin.Only left/right margin and any padding
@@ -121,4 +121,8 @@ width and marhin.Only left/right margin and any padding
   .name {
       width: 240px;
   }
+/*  When you want to make your nav menu without any indent*/
+  .main-nav li {
+  margin-right: -5px;
+
 }
