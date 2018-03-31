@@ -126,3 +126,15 @@ width and marhin.Only left/right margin and any padding
   margin-right: -5px;
 
 }
+	.col {    
+		display: inline-block;
+		width: 50%; 
+		margin-right: -4px;
+		/* align to the top of container */
+    vertical-align: top;
+    /*spaces between columns */
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+
+}
