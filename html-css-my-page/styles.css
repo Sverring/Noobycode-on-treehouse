@@ -11,7 +11,6 @@
 
 * {
   box-sizing: border-box;
-  overflow: auto;
 }
 
 body {
@@ -39,7 +38,9 @@ img {
   margin-bottom: 20px;
   border-radius: 3%;
 }
-
+ h2 {
+  text-align:justify; 
+}
 /* Making for Nav menu*/
 ul {
   list-style-type: none; /*Removes the bullets. A navigation bar does not need list markers */
@@ -124,9 +125,12 @@ a:active{
   margin-bottom: 20px;
 }
 
+/*
 .main-content {
   text-align: center;
+  margin: 0 auto;
 }
+*/
 
 .border-line {
  border-bottom: 2px solid lightgrey;
@@ -150,6 +154,7 @@ a:active{
 }
 */
 
+/*
 .text-border {
   border: 2px solid #A52A2A;
   border-radius: 45px 45px 45px 45px;
@@ -157,6 +162,7 @@ a:active{
   border-right: dashed #FF8C00;
   padding: 30px;
 }
+*/
 .main-footer {
   padding-top: 10px;
   padding-bottom: 20px;
@@ -169,20 +175,12 @@ a:active{
     width: 75%;
     padding-left: 50px;
     padding-right: 50px;
-    margin: auto;
+    margin: 80%;
     max-width: 960px;
 }
 
-.col {
-   display:inline-block;
-   width: 50%;
-  /* adjust two element along */
-   margin-right: -30px;
-   vertical-align: top;
-   /* space between two selected elements*/
-   padding-left: 1em;
-   padding-right: 1em;
-}
+
+
 <!-- Floated Columns ----------------->
 /*
 .left-position,
@@ -211,9 +209,29 @@ a:active{
 */
 <!-- Media Queries ------------------->
 
-@media (max-width:1024px) {
+@media only screen and (min-width: 769px) {
+   
+.main-content {
+    width: 80%;
+    max-width: 1980px;
+    margin: 0 auto;
+}
 
 
 }
+
+.col {
+   display: inline-block;
+   width: 50%;
+  /* adjust two element along */
+   margin-right: -150px;
+   margin-left: 10px;
+   vertical-align: middle;
+   align-self:center;
+   /* space between two selected elements*/
+   padding-left: 1em;
+   padding-right: 1em;
+ }
+
 
 
